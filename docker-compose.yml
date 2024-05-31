@@ -9,4 +9,5 @@ services:
       - "80:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./html:/usr/share/nginx/html
+      - ./images:/usr/share/nginx/html/images
+      - ./portFolioStyle.css:/usr/share/nginx/html/portFolioStyle.css
